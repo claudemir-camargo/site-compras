@@ -1,0 +1,18 @@
+img {
+    height: 70px;
+    width: 100px;
+}
+
+.menu {
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 300px;
+    max-height: 0; /* Inicialmente, ocultamos a lista de itens */
+    overflow: hidden;
+    transition: max-height 0.3s ease; /* Adicionamos uma transição suave */
+}
+.menu h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    cursor: pointer; /* Adicionamos um cursor de mão para indicar que é clicável */
+}

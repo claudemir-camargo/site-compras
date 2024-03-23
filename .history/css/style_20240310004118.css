@@ -1,0 +1,71 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+    height: 70px;
+    width: 100px;
+}
+
+body{
+    margin: 5px;
+    padding: 5px;
+    background-color:aqua
+}
+
+button {
+    background-color:blue;
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+}
+
+#div1, #div2, #div3, #div4, #div5 {
+    flex: 1;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    padding: 10px;
+}
+
+.container1 {
+    display: inline-block;
+    /*gap: 33px;*/
+}
+
+#imagem, #produto, #preco {
+    flex: 1;
+    display: inline;
+    padding: 10px;
+}
+
+.imagem {
+    width: 150px;
+    height: 100px;
+    display: inline-block;
+}
+
+.produto {
+    width: 500px;
+    height: 100px;
+    display: inline-block;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.modal:target {
+    display: block;
+}

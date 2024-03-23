@@ -1,0 +1,27 @@
+img {
+    height: 70px;
+    width: 100px;
+}
+
+body{
+    margin: 5px;
+    padding: 5px;
+}
+
+#div1, #div2, #div3, #div4, #div5 {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+}
+
+.imagem {
+    width: 150px;
+    height: 100px;
+    display: inline-block;
+}
+
+.produto {
+    width: 500px;
+    height: 100px;
+    display: inline-block;
+}

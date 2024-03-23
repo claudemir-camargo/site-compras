@@ -1,0 +1,11 @@
+.container {
+    
+    justify-content: space-between;
+}
+.order-details {
+    flex: 3;
+    margin-right: 20px;
+}
+.tracking-button {
+    flex: 1;
+}

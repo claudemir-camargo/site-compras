@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <title>Site de Compras</title>
+</head>
+
+<body>
+    <h1>Meus pedidos</h1>
+    <ul>
+        <li><a href="">Meus dados</a></li>
+        <li><a href="">Minhas compras</a></li>
+        <li><a href="">Avaliar produto</a></li>
+    </ul>
+    <h2>Meus dados</h2>
+    <!-- Conta -->
+    <fieldset>
+        <legend>Dados da conta</legend>
+        <form>
+            <label>E-mail</label><br>
+            <input type="email" id="email" name="email" placeholder="ex: seuemail@mail.com"><br><br>
+            <input type="checkbox">
+            <label>Quero receber e-mails promocionais</label><br><br>
+            <label>Senha</label><br>
+            <input type="password" placeholder="use uma senha forte">
+        </form>
+    </fieldset>
+    <!-- Pessoais -->
+    <fieldset>
+        <legend>Dados pessoais</legend>
+        <form>
+            <label>Nome completo</label><br>
+            <input type="text" placeholder="ex: João da Silva"><br><br>
+            <label>Como gostaria que a gente te chamasse? (Opcional) </label><br>
+            <input type="text" placeholder="Joãozin">
+        </form>
+    </fieldset>
+    <button type="button">Salvar alterações</button>
+    <!-- Minhas compras -->
+    <h2>Minhas compras</h2>
+    <fieldset>
+        <p>Número do pedido<br>#12345678</p>
+        <p>Status<br>Concluído</p>
+        <p>Data<br>31/07/2024</p>
+        <p>Forma de pagamento<br>Cartão de crédito</p>
+        <p>Acompanhamento<br><button>Rastreio detalhado</button></p>
+    </fieldset>
+    <!-- Produto -->
+    <br>
+    <fieldset>
+        <img src="img/suporte.jpg" alt="Suporte">
+        <h3>
+            <p>Suporte Articulado para Monitor e Notebook de 13 a 32 Vinik,
+                Articulação Dupla - SMN500</p>
+        </h3>
+        Quantidade: 1<br>
+        <a href="">Avaliar produto</a><br>
+        R$ 99,90
+    </fieldset>
+    <br>
+    <details tag="Detalhes de Envio e Pagamento">
+        <p></p>
+        <strong>Endereço de entrega</strong><br>
+        Avenida Estelita Falcão<br>
+        Número 12, Centro<br>
+        CEP 48170-970 - Itapetininga/São Paulo
+        <br><br>
+        <strong>Forma de Pagamento</strong><br>
+        Cartão de crédito<br>
+        Master Card **** **** **** 1234<br>
+        Titular: Claudemir Camargo
+        <br><br>
+        <strong>Frete</strong>
+        R$ 15,50<br>
+        Enviado por GFL<br>
+        Entregue
+    </details>
+    <br>
+    <form>
+        <h2>Avaliação do produto</h2>
+        <fieldset>
+            <legend>Opinião sobre o produto</legend>
+            <label><strong>Qual cor do produto mais te agrada?</strong></label><br>
+            <input type="color" value="#ff0000"><br><br>
+            <label><strong>O produto é de qualidade?</strong></label><br>
+            <input type="radio" name="qualidade"><label>Concordo totalmente</label><br>
+            <input type="radio" name="qualidade"><label>Concordo</label><br>
+            <input type="radio" name="qualidade"><label>Não estou decidido</label><br>
+            <input type="radio" name="qualidade"><label></label>Discordo</label><br>
+            <input type="radio" name="qualidade"><label></label>Discordo Totalmente</label>
+            <br><br>
+            <label><strong>Para você, quais parâmentros são mais importantes na qualidade do
+                    produto?</strong></label><br>
+            <input type="checkbox"><label>Durabilidade</label><br>
+            <input type="checkbox"><label>Características acessórias ou Features</label><br>
+            <input type="checkbox"><label>Confiabilidade</label><br>
+            <input type="checkbox"><label>Aparência</label>
+            <br><br>
+            <label><strong>Descreva a característica que mais chamou sua atenção no produto</strong></label><br>
+            <input type="text">
+        </fieldset>    
+        <fieldset>
+            <legend>Condições atuais</legend>
+            <label><strong>Adicione uma foto atual do produto</strong></label><br>
+            <input type="file">
+            <br><br>
+            <label><strong>Data de compra</strong></label><br>
+            
+        </fieldset>    
+
+
+    </form>
+
+
+    </fieldset>
+
+
+
+</body>
+
+</html>

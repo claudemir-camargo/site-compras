@@ -1,0 +1,11 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
+.order-details {
+    grid-column: span 3;
+}
+.tracking-button {
+    grid-column: span 2;
+}

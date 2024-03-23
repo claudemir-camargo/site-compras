@@ -1,0 +1,23 @@
+img {
+    height: 70px;
+    width: 100px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.pedido, .status, .data, .pagamento, .acompanhamento {
+    display: flex; /* Torna os elementos flexíveis */
+    /*align-items: center;  Alinha verticalmente ao centro */
+    margin-bottom: 10px; /* Espaçamento entre os elementos */
+}
+
+/* Estilização do texto dentro dos elementos */
+.pedido p, .status p, .data p, .pagamento p, .acompanhamento p {
+    font-size: 16px;
+    color: #333;
+    /* Outros estilos de fonte, cor, etc. */
+}

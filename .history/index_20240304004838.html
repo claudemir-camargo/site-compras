@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <title>Site de Compras</title>
+</head>
+
+<body>
+    <h1>Meus pedidos</h1>
+    <ul>
+        <li><a href="#meus-dados">Meus dados</a></li>
+        <li><a href="#minhas-compras">Minhas compras</a></li>
+        <li><a href="#avaliacao-produto">Avaliar produto</a></li>
+    </ul>
+    <h2 id="meus-dados">Meus dados</h2>
+    <!-- Conta -->
+    <fieldset>
+        <legend>Dados da conta</legend>
+        <form>
+            <label>E-mail</label><br>
+            <input type="email" id="email" name="email" placeholder="ex: seuemail@mail.com"><br><br>
+            <input type="checkbox">
+            <label>Quero receber e-mails promocionais</label><br><br>
+            <label>Senha</label><br>
+            <input type="password" placeholder="use uma senha forte">
+        </form>
+    </fieldset>
+    <!-- Pessoais -->
+    <fieldset>
+        <legend>Dados pessoais</legend>
+        <form>
+            <label>Nome completo</label><br>
+            <input type="text" placeholder="ex: João da Silva"><br><br>
+            <label>Como gostaria que a gente te chamasse? (Opcional) </label><br>
+            <input type="text" placeholder="Joãozin">
+        </form>
+    </fieldset>
+    <button type="button">Salvar alterações</button>
+    <hr>
+    <!-- Minhas compras -->
+    <h2 id="minhas-compras">Minhas compras</h2>
+    <fieldset>
+        <div id="div1">
+            <p>Número do pedido<br>#12345678</p>
+        </div>
+        <div id="div2">
+            <p>Status<br>Concluído</p>
+        </div>
+        <div id="div3">
+            <p>Data<br>31/07/2024</p>
+        </div>
+        <div id="div4">
+            <p>Forma de pagamento<br>Cartão de crédito</p>
+        </div>
+        <div id="div5">
+            <p>Acompanhamento<br><button>Rastreio detalhado</button></p>
+        </div>
+    </fieldset>
+    <div id="rastreioModal" class="modal">
+        <h2>Rastreio detalhado</h2>
+        <p>Seu pedido foi entregue com sucesso!<br>
+            Entregue por: GFL<br>
+            Código de rasteeio: 123456789<br>
+            Entregue em: 31/07/2024<br>
+        </p>
+        <a href="#">Fechar</a>
+    </div>
+
+    <!-- Produto -->
+    <br>
+    <fieldset>
+        <div class="imagem"><img src="img/suporte.jpg" alt="Suporte"></div>
+        <div class="produto">
+            <h3>
+                <p>Suporte Articulado para Monitor e Notebook de 13 a 32 Vinik,
+                    Articulação Dupla - SMN500</p>
+            </h3>
+            Quantidade: 1<br>
+            <a href="">Avaliar produto</a><br>
+        </div>
+        R$ 99,90
+    </fieldset>
+    <br>
+    <details tag="Detalhes de Envio e Pagamento">
+        <p></p>
+        <strong>Endereço de entrega</strong><br>
+        Avenida Estelita Falcão<br>
+        Número 12, Centro<br>
+        CEP 48170-970 - Itapetininga/São Paulo
+        <br><br>
+        <strong>Forma de Pagamento</strong><br>
+        Cartão de crédito<br>
+        Master Card **** **** **** 1234<br>
+        Titular: Claudemir Camargo
+        <br><br>
+        <strong>Frete</strong>
+        R$ 15,50<br>
+        Enviado por GFL<br>
+        Entregue
+    </details>
+    <hr>
+    <br>
+    <form>
+        <h2 id="avaliacao-produto">Avaliação do produto</h2>
+        <fieldset>
+            <legend>Opinião sobre o produto</legend>
+            <label><strong>Qual cor do produto mais te agrada?</strong></label><br>
+            <input type="color" value="#ff0000"><br><br>
+            <label><strong>O produto é de qualidade?</strong></label><br>
+            <input type="radio" name="qualidade"><label>Concordo totalmente</label><br>
+            <input type="radio" name="qualidade"><label>Concordo</label><br>
+            <input type="radio" name="qualidade"><label>Não estou decidido</label><br>
+            <input type="radio" name="qualidade"><label></label>Discordo</label><br>
+            <input type="radio" name="qualidade"><label></label>Discordo Totalmente</label>
+            <br><br>
+            <label><strong>Para você, quais parâmentros são mais importantes na qualidade do
+                    produto?</strong></label><br>
+            <input type="checkbox"><label>Durabilidade</label><br>
+            <input type="checkbox"><label>Características acessórias ou Features</label><br>
+            <input type="checkbox"><label>Confiabilidade</label><br>
+            <input type="checkbox"><label>Aparência</label>
+            <br><br>
+            <label><strong>Descreva a característica que mais chamou sua atenção no produto</strong></label><br>
+            <input list="browsers" name="browser" id="browser">
+            <datalist id="browsers">
+                <option value="Cor">
+                <option value="Tamanho">
+                <option value="Peso">
+                <option value="Material">
+            </datalist>
+        </fieldset>
+        <fieldset>
+            <legend>Condições atuais</legend>
+            <label><strong>Adicione uma foto atual do produto</strong></label><br>
+            <input type="file">
+            <br><br>
+            <label><strong>Data de compra</strong></label><br>
+            <input type="date">
+            <br><br>
+            <label><strong>Deixe um comentário sobre as condições do produto</strong></label><br>
+            <textarea name="comentario"></textarea>
+        </fieldset>
+        <button type="button">Enviar avaliação</button>
+    </form>
+</body>
+
+</html>

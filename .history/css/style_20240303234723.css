@@ -1,0 +1,10 @@
+img {
+    height: 70px;
+    width: 100px;
+}
+
+div {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+}
